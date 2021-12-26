@@ -10,6 +10,7 @@ spring:
     #      <group>: dev, auth
     use-legacy-processing: true
   profiles:
+    active: dev
     group:
       <group>: dev, heroku
   jmx:
