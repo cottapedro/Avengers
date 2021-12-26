@@ -13,7 +13,7 @@ services:
       - pdb12:/var/lib/postgresql/data
     networks:
       - postgres-compose-network
-  teste-pgadmin-compose:
+  pgadmin-avenger:
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
