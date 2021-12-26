@@ -25,7 +25,7 @@ class AvengerController(@Autowired private val repository: AvengerRepository) {
                 ResponseEntity.ok().body(it);
             }
 
-    @GetMapping( "{id}")
+    @GetMapping( "{id}/detail")
     fun getAvengerDetails(@PathParam("id") id : Long) =
             repository.getDetail(id)?.let{
                 ResponseEntity.ok().body(AvengerResponse.from(it));
